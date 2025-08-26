@@ -408,5 +408,87 @@
   <!-- Google Tag Manager / GA4 -->
   <!-- Facebook Pixel -->
 
+<!-- مكتبة الأيقونات في رأس الصفحة -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- أزرار التواصل الاجتماعي المثبتة -->
+<div class="social-fixed">
+  <a class="social-btn fb" href="https://www.facebook.com/share/1BDWZVidXh/" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+    <span class="label">فيسبوك</span>
+  </a>
+
+  <a class="social-btn ig" href="https://instagram.com/yourUser" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+    <span class="label">إنستغرام</span>
+  </a>
+
+  <a class="social-btn wa" href="https://wa.me/212622358924?text=سلام%20عليكم%20بغيت%20معلومات%20عن%20العرض" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="label">واتساب</span>
+  </a>
+
+  <a class="social-btn tg" href="https://t.me/yourUser" target="_blank" rel="noopener" aria-label="Telegram">
+    <i class="fa-brands fa-telegram"></i>
+    <span class="label">تيليغرام</span>
+  </a>
+
+  <a class="social-btn yt" href="https://m.youtube.com/@FIBREINWIOUSSAMA" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+    <span class="label">يوتيوب</span>
+  </a>
+</div>
+
+<style>
+  .social-fixed {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+  }
+  .social-btn {
+    --btn-h: 44px;
+    --icon-w: 44px;
+    height: var(--btn-h);
+    min-width: var(--icon-w);
+    padding-left: var(--icon-w);
+    padding-right: 12px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,.18);
+    transform: translateX(-8px);
+    transition: transform .25s ease, box-shadow .25s ease, opacity .25s ease;
+    overflow: hidden;
+    opacity: .96;
+  }
+  .social-btn:hover { transform: translateX(0); opacity: 1; }
+  .social-btn i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--icon-w);
+    height: var(--btn-h);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+  }
+  .social-btn .label { font-size: 14px; font-weight: 600; white-space: nowrap; }
+  .social-btn.fb { background: #1877F2; }
+  .social-btn.ig { background: linear-gradient(45deg,#F58529,#FEDA77,#DD2A7B,#8134AF,#515BD4); }
+  .social-btn.wa { background: #25D366; }
+  .social-btn.tg { background: #24A1DE; }
+  .social-btn.yt { background: #FF0000; }
+  @media (max-width: 640px) {
+    .social-btn { padding-right: 0; }
+    .social-btn .label { display: none; }
+  }
+</style>
 </body>
 </html>
+
